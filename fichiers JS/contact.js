@@ -13,10 +13,10 @@
         console.log(this.Info)
     }
   
-    checkMinLenght(target, minLenght){ //methode recursive
-        if (target === undefined || target.lenght < minLenght){
+    checkMinLenght(target, minLength){ //methode recursive
+        if (target === undefined || target.minLength < minLength){
             let newString = prompt("Veuillez entrez au moins " + minLength + " caractères.");//LA BOITE N'APPARAÎT PAS??
-            return this.checkMinLenght(newString, minLength);
+            return this.checkMinLength(newString, minLength);
         }
         
             return target
